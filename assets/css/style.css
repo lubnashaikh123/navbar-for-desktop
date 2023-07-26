@@ -1,0 +1,334 @@
+:root{
+    --color-primary:#f6d200;
+    --color-grey :#ededed;
+    --color-dark :#000;
+    --color-white :#fff;
+}
+a:link
+a:visited{
+    text-decoration: none
+}
+ul{
+    list-style: none;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*, *::after, *::before{    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.img-fluid{
+    width:100%;
+    object-fit: cover;
+}
+body{
+    background-color: var(--color-grey);
+    color:var(--color-dark);
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Asap', sans-serif;
+}
+.section-heading{
+    font-size: 30px;
+    color:var(--color-dark);
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.site.header {
+    background: var(--color-dark);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.site-title {
+    color: var(--color-white);
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.site-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.site-description {
+    color: var(--color-primary);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: -8px;
+}
+.main-menu {
+    background-color: var(--color-primary);
+}
+.main-menu ul {
+    list-style: none;
+}
+.main-menu ul li a{
+    text-decoration: none;
+    color: var(--color-dark);
+    display: block;
+    padding:6px 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    transition:all .5s ease-in-out;
+    text-transform: capitalize;
+}
+.main-menu ul li a:hover ,.main-menu ul li a:focus{
+    background-color: var(--color-dark);
+    color:var(--color-primary);
+}
+
+ /* main-cotent-area */
+.main-cotent-area,.rightsideBar{
+     padding: 20px;
+}
+
+/*################ footer css ##################*/
+.posts img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post{
+    background:var(--color-white);
+    margin-bottom: 20px;
+}
+.post a {
+    color: var(--color-dark);
+    text-decoration: none;
+}
+.post-content h2{
+    background-color: var(--color-primary);
+    padding: 40px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.post-content p{
+    padding: 30px;
+}
+/* watch section css */
+.watch-card{
+    margin-bottom: 20px;
+}
+.watch-img{
+    height: 480px;
+}
+.watch-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.watch-content {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 30px;
+}
+.watch-content h3{
+       font-weight: 300;
+       text-transform: capitalize;
+       font-size: 32px;
+}
+.movie-info{
+    font-weight: bold;
+}
+.movie-info span{
+    margin-right: 20px;
+}
+.movie-story{
+    margin:15px 0;
+}
+.movie-info a{
+    color: var(--color-white);
+    text-decoration: underline;
+}
+/* download css */
+.download-img img{
+    width:100%;
+}
+.download-img{
+    background-color: var(--color-dark)
+}
+.download-content > a{
+            background:var(--color-dark);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--color-white);
+}
+.download-info img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+.cast , .genere {
+    display: flex;
+}
+.genere p{
+    height: 60px;
+    line-height: 60px;
+}
+.cast h4 , .genere h4{
+    line-height: 60px;
+    height: 60px;
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+.cast{
+    margin-bottom: 20px;
+}
+.download-rating{
+    padding: 30px;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+.download-info{
+    background-color: var(--color-white);
+    padding: 20px 10px;
+}
+/* movie gallery section */
+.gallery-images{
+         display: flex;
+         flex-wrap: wrap;
+         margin-left: -10px;
+}
+.gallery-image{
+    height: 250px;
+    flex-grow:1 ;
+    margin: 0 0 10px 10px;
+}
+/* //1 and 5th  */
+.gallery-image:nth-child(4n + 1){
+    flex-basis: 450px;
+}
+/* 2nd and 6th  */
+.gallery-image:nth-child(4n + 2){
+    flex-basis: 325px;
+}
+/* 3rd and 7th */
+.gallery-image:nth-child(4n + 3){
+    flex-basis: 180px;
+}
+/* 4th and 8th */
+.gallery-image:nth-child(4n + 4){
+    flex-basis: 180px;
+}
+.gallery-image{
+    margin-bottom: 20px;
+    height: 250px;
+}
+.gallery-image a img,.gallery-image a{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+.gallery-image a img{
+         object-fit: cover;
+}
+.widget{
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.widget h3{
+    margin-bottom: 10px;
+}
+.sidebar-menu ul {
+    padding-left: 20px;
+}
+.sidebar-menu ul{
+    padding-left: 20px;
+}
+.sidebar-menu ul a{
+    display: block;
+    padding-bottom: 5px;
+    color:var(--color-dark);
+    font-weight: bold;
+}
+ /* footer css */
+.footer{
+    background-color: var(--color-dark);
+    color:var(--color-white);
+    padding:10px 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@media all and (min-width:920px){
+    .main-menu ul{
+        display:flex;
+    }
+    .main-menu ul li{
+        flex-grow: 1;
+    }
+    .posts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .post-half{
+        flex-basis: 49%;
+    }
+    .post-one-third{
+        flex-basis: 32%;
+    }
+    .download-content{
+        display: flex;
+    }
+    .download-content > *{
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .download-info{
+      flex-grow: 2 !important;
+     }
+     .download-info{
+        background-color: var(--color-white);
+        padding: 30px;
+        flex-grow: 2 !important;
+     }
+     
+    
+
+}
+@media all and (min-width:1180px){
+    .order-1 {
+        order:1;
+    }
+    .content-area{
+        display: flex;
+    }
+    .section-heading{
+        font-size: 48px;
+        margin:15px 0;
+    }
+    .rightsideBar{
+        flex: 0 0 320px;
+    }
+    .watch-card{
+        display: flex;
+        margin-bottom: 36px;
+    }
+    .watch-img{
+        flex-basis: 550px;
+    }
+    .watch-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+} 
